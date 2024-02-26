@@ -1,0 +1,72 @@
+@import "../../styles/mixin";
+
+#nav_gallery {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding: 1% 10% 5% 10%;
+
+  a {
+    button {
+      position: relative;
+      width: 261px;
+      height: 49px;
+      border-radius: 5px;
+      border: 1px solid #848080;
+      filter: drop-shadow(4px 4px 4px rgba(0, 0, 0, 0.55)) grayscale(0.2);
+      color: $white;
+      text-align: center;
+      text-shadow: rgb(0, 0, 0) 2px 1px 2px;
+      font-family: "Inter";
+      font-size: 15px;
+      font-weight: 600;
+      cursor: pointer;
+
+      &::before {
+        content: "";
+        position: absolute;
+        top: -2px;
+        left: -1.5px;
+        width: calc(100% + 3px);
+        height: calc(100% + 3px);
+        /* Adjust the opacity as needed */
+        background-color: rgba(0, 0, 0, 0.7);
+        opacity: 0;
+        transition: opacity 0.3s ease;
+        z-index: -1;
+        border-radius: 7px;
+        box-sizing: border-box;
+      }
+
+      &:hover::before {
+        filter: drop-shadow(4px 4px 4px rgba(0, 0, 0, 0.55)) contrast(2)
+          blur(1px);
+        opacity: 1;
+      }
+      // Conditionally apply styles based on the path
+      &.active::before {
+        filter: drop-shadow(4px 4px 4px rgba(0, 0, 0, 0.55)) grayscale(0.2)
+          blur(2px);
+        opacity: 1;
+      }
+    }
+
+    &:first-child {
+      button {
+        margin-right: 120px;
+        background: url("src/assets/images/images_structure/guest_1.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        filter: drop-shadow(4px 4px 4px rgba(0, 0, 0, 0.55)) saturate(1.4);
+      }
+    }
+    &:last-child {
+      button {
+        background: url("src/assets/images/images_structure/background_btn2.avif");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position-y: 55%;
+      }
+    }
+  }
+}

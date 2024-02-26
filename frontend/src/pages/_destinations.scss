@@ -1,0 +1,14 @@
+@import "../styles/mixin";
+
+.special_condition {
+  #going_back {
+    #img {
+      display: none;
+    }
+  }
+  #going_forth {
+    #img {
+      display: none;
+    }
+  }
+}

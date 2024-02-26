@@ -1,0 +1,104 @@
+@import "../../styles/mixin";
+
+#formDatePicker {
+  display: flex;
+  flex-direction: column;
+  height: 345px;
+  width: 50%;
+  font-family: Inter;
+  color: $txt;
+  #formDatePicker_form {
+    text-transform: capitalize;
+    height: 290px;
+    .radio_btn {
+      display: flex;
+      flex-direction: column;
+      &:last-child {
+        margin-top: 40px;
+      }
+
+      .radio_btn_selection {
+        display: flex;
+        font-size: 14px;
+        font-weight: 600;
+        cursor: pointer;
+        input {
+          margin-right: 18px;
+        }
+      }
+      input.radio_input {
+        width: 16px;
+        height: 16px;
+        border-radius: 50%;
+        border: 1px solid $txt; // Change the border color here
+        margin-right: 8px;
+        cursor: pointer;
+        accent-color: $darkBlue;
+      }
+
+      .radio_infos {
+        margin: 10px 0 0 25px;
+        font-size: 12px;
+        font-style: italic;
+      }
+
+      // EXTRA OPTIONS FOR MORNING
+      .radio_btn_pickup_points {
+        margin: 20px 0 20px 0px;
+        .radio_btn_points {
+          .radio_btn_points_label {
+            font-size: 12px;
+            font-weight: 600;
+            margin-right: 8px;
+            .radio_btn_points_input {
+              margin-right: 8px;
+              cursor: pointer;
+            }
+          }
+          .radio_btn_points_infos {
+            font-size: 12px;
+            font-style: italic;
+          }
+        }
+        .radio_btn_points_input {
+          margin: 10px 0 0 20px;
+          font-size: 12px;
+          accent-color: $darkBlue;
+          &:first-child {
+            margin-bottom: 20px;
+          }
+        }
+      }
+    }
+  }
+  #formDatePicker_passengers {
+    height: 50px;
+    font-family: Inter;
+    margin-top: 11%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    .formDatePicker_passengers_form {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      width: 100%;
+      .formDatePicker_passenger_inputs {
+        margin-inline: 10px;
+        .passenger_label {
+          font-size: 14px;
+          font-weight: 600;
+          padding-bottom: 10px;
+          display: block;
+        }
+      }
+    }
+    #formDatePicker_passengers_check_available {
+      @include btn_step_reservation;
+      position: absolute;
+      margin-top: 235px;
+    }
+  }
+}

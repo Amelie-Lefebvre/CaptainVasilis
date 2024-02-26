@@ -1,0 +1,162 @@
+@import "../../styles/mixin";
+
+// function caroussel (cards)
+.panel {
+  display: flex;
+  flex-direction: row;
+  background-size: auto 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: $white;
+  margin: 30px;
+  cursor: pointer;
+  color: black;
+  position: relative;
+  width: 10vh;
+  height: 534px;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out,
+    opacity 0.3s ease-in-out;
+
+  .panel_img {
+    width: 100%;
+    height: auto;
+    background-size: auto 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    color: $white;
+    position: relative;
+    width: 175px;
+    transition: filter 10s ease-out;
+    filter: brightness(0.25);
+    transition: background-size 2s ease-in-out;
+    &:hover {
+      background-size: auto 110%;
+    }
+    h3 {
+      position: absolute;
+      font-size: 70px;
+      font-family: "Inter";
+      font-weight: 400;
+      margin: 0;
+      top: 36%;
+      left: 22px;
+      display: none;
+      text-align: center;
+      text-shadow: rgb(80, 80, 80) 1px 1px 10px;
+    }
+  }
+  .panel_story {
+    display: none;
+
+    p {
+      margin: 70px 20px;
+      font-family: "Epilogue";
+      font-size: 11px;
+      font-style: italic;
+      line-height: 30px;
+      font-weight: 400;
+      color: $txt;
+    }
+
+    .btn_destination_any {
+      button {
+        position: relative;
+        left: 40px;
+        top: 80px;
+        background-color: $lightOrange;
+        width: 250px;
+        height: 67px;
+        border: none;
+        font-family: "Inter";
+        font-size: 16px;
+        font-style: italic;
+        font-weight: 400;
+        color: $white;
+        cursor: pointer;
+      }
+    }
+  }
+  &.non-active {
+    width: 175px;
+    .panel_img {
+      filter: brightness(1);
+    }
+  }
+  &.active {
+    margin: 30px;
+    width: 80vh;
+    background-color: $white;
+    border: 1px solid rgb(142, 142, 142);
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    transform: scale(1.05);
+
+    .panel_img {
+      width: 62%;
+      cursor: default;
+      filter: brightness(1);
+      h3 {
+        opacity: 1;
+        display: block;
+      }
+    }
+    .panel_story {
+      cursor: default;
+      display: block;
+      width: 38%;
+    }
+  }
+}
+
+// final item for caroussel
+.expanding_card_nav {
+  box-sizing: border-box;
+  height: 715px;
+  background: $grey_blue;
+  margin-block: 50px 200px;
+  @include flex_centering_col;
+  padding-inline: 180px;
+  #container_cards {
+    display: flex;
+    overflow: hidden;
+    width: auto;
+    .panel {
+      &:first-child {
+        .panel_img {
+          background-image: url("src/assets/images/images_temporary/background_area_1.avif");
+        }
+      }
+      &:nth-child(2) {
+        .panel_img {
+          background-image: url("src/assets/images/images_temporary/background_area_2.avif");
+        }
+      }
+
+      &:nth-child(3) {
+        .panel_img {
+          background-image: url("src/assets/images/images_temporary/background_area_3.avif");
+        }
+      }
+      &:nth-child(4) {
+        .panel_img {
+          background-image: url("src/assets/images/images_temporary/background_area_4.avif");
+        }
+      }
+      &:nth-child(5) {
+        .panel_img {
+          background-image: url("src/assets/images/images_temporary/background_area_5.avif");
+        }
+      }
+      &:nth-child(6) {
+        .panel_img {
+          background-image: url("src/assets/images/images_temporary/background_area_6.avif");
+        }
+      }
+      &:nth-child(7) {
+        .panel_img {
+          background-image: url("src/assets/images/images_temporary/background_area_7.avif");
+        }
+      }
+    }
+  }
+}

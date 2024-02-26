@@ -1,0 +1,173 @@
+@import "../styles/mixin";
+
+#contact_us {
+  display: flex;
+  flex-direction: row;
+  width: auto;
+  position: relative;
+  overflow: hidden;
+  margin: 0 18% 10% 18%;
+  height: 880px;
+  border: 1px $txt solid;
+  .blob-container {
+    position: absolute;
+    z-index: 0;
+    left: -600px;
+    top: -250px;
+    img {
+      position: relative;
+      width: 1500px;
+      height: 1450px;
+      background-repeat: no-repeat;
+    }
+    .one {
+      -webkit-mask-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBzdGFuZGFsb25lPSJubyI/Pgo8c3ZnIHZpZXdCb3g9IjAgMCAyMDAgMjAwIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgogIDxwYXRoIGZpbGw9IiNGRjAwNjYiIGQ9Ik0zNSwtNjUuMkM0MC42LC01Ny4zLDM3LjIsLTM4LjQsMzkuNSwtMjUuN0M0MS44LC0xMyw0OS42LC02LjUsNTYuMSwzLjdDNjIuNiwxNCw2Ny42LDI4LDY0LDM4LjRDNjAuNCw0OC44LDQ4LjIsNTUuNiwzNi4xLDYxLjFDMjQsNjYuNywxMiw3MSwtMC4yLDcxLjRDLTEyLjQsNzEuNywtMjQuOCw2OCwtMzMuNCw2MC41Qy00Mi4xLDUyLjksLTQ3LDQxLjQsLTU2LjYsMzAuN0MtNjYuMywyMCwtODAuNywxMCwtODAuOSwtMC4xQy04MS4xLC0xMC4yLC02Ny4xLC0yMC40LC01OC40LC0zMi44Qy00OS43LC00NS4yLC00Ni4zLC01OS43LC0zNy40LC02NS43Qy0yOC42LC03MS43LC0xNC4zLC02OS4zLDAuMiwtNjkuNkMxNC43LC02OS45LDI5LjMsLTczLDM1LC02NS4yWiIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMTAwIDEwMCkiIC8+Cjwvc3ZnPgo=);
+      mask-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBzdGFuZGFsb25lPSJubyI/Pgo8c3ZnIHZpZXdCb3g9IjAgMCAyMDAgMjAwIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgogIDxwYXRoIGZpbGw9IiNGRjAwNjYiIGQ9Ik0zNSwtNjUuMkM0MC42LC01Ny4zLDM3LjIsLTM4LjQsMzkuNSwtMjUuN0M0MS44LC0xMyw0OS42LC02LjUsNTYuMSwzLjdDNjIuNiwxNCw2Ny42LDI4LDY0LDM4LjRDNjAuNCw0OC44LDQ4LjIsNTUuNiwzNi4xLDYxLjFDMjQsNjYuNywxMiw3MSwtMC4yLDcxLjRDLTEyLjQsNzEuNywtMjQuOCw2OCwtMzMuNCw2MC41Qy00Mi4xLDUyLjksLTQ3LDQxLjQsLTU2LjYsMzAuN0MtNjYuMywyMCwtODAuNywxMCwtODAuOSwtMC4xQy04MS4xLC0xMC4yLC02Ny4xLC0yMC40LC01OC40LC0zMi44Qy00OS43LC00NS4yLC00Ni4zLC01OS43LC0zNy40LC02NS43Qy0yOC42LC03MS43LC0xNC4zLC02OS4zLDAuMiwtNjkuNkMxNC43LC02OS45LDI5LjMsLTczLDM1LC02NS4yWiIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMTAwIDEwMCkiIC8+Cjwvc3ZnPgo=);
+    }
+
+    // contact form itself
+  }
+  .contact_us_form {
+    position: absolute;
+    z-index: 10;
+    right: 0;
+    width: 56%;
+    height: 100%;
+    background-color: transparent;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding-block: 2%;
+    h2 {
+      font-family: Epilogue;
+      font-size: 20px;
+      font-weight: 400;
+    }
+    span {
+      position: relative;
+      background-color: $txt;
+      height: 1.5px;
+      width: 45%;
+      margin-left: 18%;
+      left: 0;
+      margin-bottom: 30px;
+    }
+
+    #form_contact {
+      .form_contact_input {
+        &:first-child {
+          margin-top: 5%;
+        }
+        padding-block: 2%;
+      }
+      .form_contact_input,
+      #form_contact_input_message {
+        display: flex;
+        flex-direction: column;
+      }
+      .form_contact_input {
+        width: 50%;
+        textarea,
+        input {
+          background-color: rgba(255, 255, 255, 0.2);
+          margin-block: 10px;
+          border: none;
+          border-bottom: 1px solid #111010;
+          outline: none;
+          padding: 5px;
+          &:active,
+          &:focus {
+            border: 1px solid $txt;
+            border-bottom: 1px solid #111010;
+          }
+        }
+      }
+      #form_contact_input_message {
+        textarea {
+          width: 400px;
+          height: 150px;
+          margin-block: 20px 60px;
+          background-color: rgba(255, 255, 255, 0.71);
+          border: 1px solid #111010;
+          outline: none;
+          padding: 2%;
+        }
+      }
+      .btn_next_step {
+        position: absolute;
+        margin-left: 0;
+        right: 100px;
+      }
+    }
+  }
+}
+
+// overlay message
+
+#overlay_message {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 9999;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  #message {
+    width: 30%;
+    height: 200px;
+    background-color: $white;
+    padding: 1%;
+    border: $grey 2.5px solid;
+    position: relative;
+
+    // closing button
+    .close_overlay {
+      background-color: $darkBlue;
+      position: absolute;
+      top: 10px;
+      left: calc(78% - 20px);
+      cursor: pointer;
+      font-size: 30px;
+      width: 30px;
+      height: 30px;
+      color: $white;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-weight: 800;
+      filter: drop-shadow(2px 2px 2px rgba(43, 43, 43, 0.392));
+      &:hover,
+      &:active {
+        box-shadow: inset 0px 0px 10px rgba(0, 0, 0, 0.684);
+        filter: drop-shadow(
+          2px 2px 2px rgba(43, 43, 43, 0.503)
+        ); // Add inner shadow on hover
+      }
+    }
+
+    div {
+      margin: 8%;
+      p {
+        text-align: center;
+        font-family: Epilogue;
+        &:first-child {
+          text-transform: uppercase;
+          font-size: 25px;
+          font-weight: 600;
+          color: $darkBlue;
+        }
+        &:nth-child(2),
+        &:last-child {
+          color: $txt;
+          font-size: 15px;
+          text-transform: initial;
+          font-weight: 500;
+        }
+      }
+    }
+  }
+}

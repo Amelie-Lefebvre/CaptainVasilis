@@ -1,0 +1,297 @@
+// imports
+@import "../../styles/mixin";
+
+#headerNav {
+  height: 149px;
+  width: auto;
+  padding-inline: 18%;
+  background-color: $white;
+  filter: drop-shadow(0px 20px 10px rgba(0, 0, 0, 0.5));
+  ul {
+    margin: 0;
+    padding-top: 2%;
+    @include flex_basic;
+    list-style: none;
+
+    li {
+      position: relative;
+      a,
+      Link {
+        @include inter_basic;
+        font-weight: 700;
+        text-decoration: none;
+        text-transform: uppercase;
+      }
+      .headerNav_link {
+        display: flex;
+        flex-direction: column;
+        color: $txt_minor;
+        h1 {
+          margin: 0;
+          @include epilogue;
+          font-size: 1.5rem;
+          &:first-letter,
+          span {
+            font-family: "Ephesis";
+            font-size: 3.2rem;
+          }
+        }
+        div {
+          @include flex_rows;
+          align-items: center;
+          p {
+            @include epilogue;
+            font-size: 20px;
+          }
+          span {
+            display: block;
+            height: 2px;
+            background-color: $txt_minor;
+            width: 25%;
+          }
+        }
+      }
+    }
+  }
+  // MEDIUM SCREEN
+  @media screen and (max-width: 1150px) {
+    height: 110px;
+    padding: 0% 6% 0% 2%;
+    ul {
+      li {
+        a,
+        Link {
+          font-size: 12px;
+        }
+        .headerNav_link {
+          h1 {
+            font-size: 14px;
+            &:first-letter,
+            span {
+              font-size: 25px;
+            }
+          }
+          div {
+            p {
+              font-size: 13px;
+            }
+            span {
+              width: 22%;
+            }
+          }
+        }
+      }
+    }
+  }
+  @media screen and (max-width: 720px) {
+    height: 80px;
+    padding-left: 0;
+    ul {
+      li {
+        a,
+        Link {
+          font-size: 10px;
+        }
+        .headerNav_link {
+          font-size: 12px;
+          h1 {
+            font-size: 14px;
+            &:first-letter,
+            span {
+              font-size: 25px;
+            }
+          }
+          div {
+            p {
+              font-size: 10px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+// BURGER MENU ON SMALL DISPLAYS
+#burger_menu_container {
+  height: 195px;
+  @include epilogue_basic;
+  text-transform: uppercase;
+  display: flex;
+  justify-content: space-between;
+  // englobe all the components
+
+  #burger_menu_toggle {
+    display: block;
+    margin: 40px 20px 40px 30px;
+    z-index: 1;
+
+    ul {
+      a {
+        text-decoration: none;
+        color: $white;
+        &:hover {
+          text-decoration: underline;
+          text-underline-offset: 10px;
+        }
+      }
+    }
+    #burger_close_open {
+      width: 40px;
+      height: 40px;
+      top: 25px;
+      left: 32px;
+      opacity: 0;
+      z-index: 2;
+      position: absolute;
+      display: block;
+      cursor: pointer;
+    }
+
+    span {
+      width: 35px;
+      height: 3px;
+      margin-bottom: 7px;
+      background: $txt;
+      z-index: 1;
+      position: relative;
+      display: block;
+
+      // burger turns into cross
+      transform-origin: 4px 0px;
+      transition: transform 0.7s cubic-bezier(0.6, 0.6, 0.1, 0.8),
+        background 0.7s cubic-bezier(0.6, 0.6, 0.1, 0.8), opacity 0.1s;
+
+      &:first-child,
+      &:nth-last-child(2) {
+        transform-origin: 0% 0%;
+      }
+    }
+
+    // if checked transform in cross
+    input:checked {
+      ~ span {
+        opacity: 1;
+        transform: rotate(45deg) translate(-2px, -1px);
+        background: $white;
+
+        //rotate the other line to make a cross
+        &:nth-last-child(2) {
+          transform: rotate(-45deg) translate(0, -1px);
+        }
+        // hide mid line from burger
+        &:nth-last-child(3) {
+          opacity: 0;
+          transform: rotate(0deg) scale(0.1);
+        }
+      }
+      ~ ul {
+        transform: none;
+      }
+    }
+  }
+
+  #burger_menu_list {
+    position: absolute;
+    width: 40%;
+    margin: -90px 0 0 -50px;
+    padding: 45px;
+    padding-top: 125px;
+    background: $nav_burger;
+    list-style-type: none;
+
+    transform-origin: 0% 0%;
+    transform: translate(-100%, 0);
+
+    transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
+
+    box-shadow: 4px 4px 4px 0px rgba(80, 71, 71, 0.5);
+    backdrop-filter: blur(2px);
+    li {
+      padding: 25px 10px;
+    }
+  }
+
+  #company_logo {
+    width: auto;
+    height: 80%;
+    padding: 20px 15px 20px 0px;
+  }
+}
+
+// HOME NAV
+#homeNav {
+  margin-block: 2%;
+  padding: 10px 50px 10px 70px;
+  @include flex_row_center;
+  img {
+    height: 40px;
+    width: 40px;
+    margin-right: 25px;
+  }
+  a {
+    font-family: "Epilogue";
+    font-size: 17px;
+    font-weight: 600;
+    text-decoration: none;
+    color: $txt;
+  }
+}
+
+// RETURN NAV
+#returnNav {
+  margin-block: 3%;
+  padding: 10px 50px 10px 70px;
+  @include flex_row_center;
+  img {
+    height: 30px;
+    width: 30px;
+    margin-right: 25px;
+  }
+  a {
+    font-family: "Epilogue";
+    font-size: 17px;
+    font-weight: 600;
+    text-decoration: none;
+    color: $txt;
+  }
+}
+
+#destinationNav {
+  @include flex_rows;
+  margin: -1% 3% 3% 3%;
+
+  #going_back,
+  #going_forth {
+    @include flex_row_center;
+    img {
+      height: 45px;
+      width: 45px;
+    }
+    a {
+      font-family: Epilogue;
+      font-size: 17px;
+      font-style: normal;
+      font-weight: 600;
+      line-height: normal;
+      text-transform: uppercase;
+      text-decoration: none;
+      color: $txt;
+    }
+    &.disabled {
+      pointer-events: none;
+      opacity: 0;
+    }
+  }
+  #going_back {
+    img {
+      margin-right: 20px;
+    }
+  }
+  #going_forth {
+    img {
+      transform: rotate(180deg);
+      margin-left: 20px;
+    }
+  }
+}

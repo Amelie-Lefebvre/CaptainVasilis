@@ -1,0 +1,279 @@
+@import "../../styles/mixin";
+
+// footer
+footer {
+  height: 206px;
+  article {
+    border-top: 2px $txt solid;
+    border-right: -10px;
+    height: 215px;
+    padding: 10px 10px;
+    margin-inline: 50px;
+    @include flex_rows;
+
+    // infos about the company
+    #informations {
+      width: 290px;
+      #informations_title {
+        width: 85px;
+        span {
+          width: 50px;
+          margin: 0px 0px 15px 35px;
+          @include spans_nav_footer;
+        }
+      }
+      ul {
+        width: 100%;
+        padding: 0;
+        margin: 15px 20px;
+        li {
+          list-style: none;
+          margin-bottom: 25px;
+          a {
+            @include inter;
+            text-decoration: none;
+            span {
+              @include epilogue;
+              text-decoration: none;
+              &:last-child {
+                &:hover {
+                  text-decoration: underline;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+    // logo
+    #company_logo_footer {
+      height: 200px;
+      width: auto;
+    }
+    // social media
+    #social_media {
+      width: 200px;
+      padding-right: 50px;
+
+      #social_media_title {
+        width: 160px;
+        margin-bottom: 15px;
+        span {
+          width: 80px;
+          margin-left: 80px;
+          @include spans_nav_footer;
+        }
+      }
+      ul {
+        @include flex_rows;
+        padding-inline: 10px;
+        margin: 0;
+        li {
+          list-style-type: none;
+
+          img {
+            &:last-child {
+              border-radius: 100%;
+            }
+            &:hover {
+              animation: bounceRotate 2s infinite;
+            }
+          }
+          @include rotation_animation;
+        }
+      }
+    }
+  }
+  .border_wave,
+  .border_wave2 {
+    background-image: url("src/assets/images/images_structure/waves.png");
+    height: 15px;
+  }
+  .border_wave {
+    display: none;
+  }
+  .border_wave2 {
+    display: block;
+  }
+  @media screen and (max-width: 1000px) {
+    #company_logo_footer {
+      display: none;
+    }
+  }
+  @media screen and (max-width: 820px) {
+    article {
+      margin-inline: 10px;
+
+      #social_media {
+        padding: 0;
+        margin: 0;
+        ul {
+          @include flex_rows;
+          width: 70%;
+          padding: 0;
+          margin: 0;
+          display: grid;
+          grid-template-columns: repeat(2, 1fr);
+          grid-gap: 30px;
+          li {
+            display: flex;
+            align-items: center;
+
+            &:nth-child(3) {
+              grid-column: span 2;
+            }
+          }
+        }
+      }
+    }
+  }
+  @media screen and (max-width: 580px) {
+    background-color: $txt_minor;
+    height: 430px;
+    margin-top: 15px;
+    display: flex;
+    flex-direction: column;
+    .border_wave {
+      display: block;
+      position: relative;
+      height: 15px;
+      top: -15px;
+    }
+    // INFOS COMPANY
+    article {
+      height: 350px;
+      width: auto;
+      border-top: none;
+      display: flex;
+      flex-direction: column;
+      #informations {
+        margin-top: -15px;
+        left: 5%;
+        position: relative;
+        #informations_title {
+          width: 75px;
+          h4 {
+            @include inter_small_footer;
+          }
+          span {
+            background: $white;
+            height: 1px;
+            width: 40px;
+            margin: 0px 0px 0px 35px;
+          }
+        }
+        ul {
+          margin: 10px 0px;
+          li {
+            list-style: none;
+            margin-bottom: 10px;
+            font-weight: 400;
+            a {
+              @include epilogue_small_footer;
+              span {
+                @include epilogue_small_footer;
+                font-weight: 300;
+              }
+            }
+          }
+        }
+      }
+      #social_media {
+        padding: 0;
+        right: -60%;
+        position: relative;
+        #social_media_title {
+          h4 {
+            @include inter_small_footer;
+          }
+          span {
+            background: $white;
+            height: 1px;
+            width: 75px;
+            margin: 0px 0px 0px 30px;
+          }
+        }
+        ul {
+          @include flex_rows;
+          width: 60%;
+          padding: 0;
+          margin: 5%;
+          display: grid;
+          grid-template-columns: repeat(2, 1fr);
+          grid-gap: 20px;
+          li {
+            display: flex;
+            align-items: center;
+
+            &:nth-child(3) {
+              grid-column: span 2;
+            }
+          }
+        }
+      }
+    }
+    .border_wave2 {
+      display: none;
+    }
+  }
+  #footer_nav {
+    font-family: "Inter";
+    font-size: 12px;
+    font-weight: 700;
+    height: 62px;
+    background-color: $txt_minor;
+    @include flex_centering_col;
+    width: 100%;
+
+    #footer_nav_border {
+      background-image: url("/src/assets/images/images_structure/waves.png");
+      background-size: cover;
+      background-repeat: repeat;
+      height: 15px;
+      margin-top: -16px;
+      width: auto;
+    }
+
+    #footer_nav_items {
+      width: 60%;
+      padding-inline: 20%;
+      text-transform: capitalize;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+
+      li {
+        list-style-type: none;
+
+        a {
+          color: $white;
+          text-decoration-color: transparent;
+          text-underline-offset: 5px;
+
+          &:hover {
+            opacity: 1;
+            transition-duration: 1s;
+            text-decoration-color: $white;
+          }
+        }
+
+        &:nth-child(2) a {
+          text-transform: uppercase;
+        }
+      }
+    }
+
+    @media screen and (max-width: 580px) {
+      border-top: solid $white 1px;
+      height: 22px;
+      margin: 0 4%;
+      @include inter_small_footer;
+
+      #footer_nav_items {
+        padding: 8% 8% 4% 8%;
+        justify-content: space-between;
+        margin: 0;
+      }
+    }
+  }
+}

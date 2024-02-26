@@ -1,0 +1,92 @@
+@import "../../styles/mixin";
+
+.introduction_article {
+  color: $txt;
+  margin: 0;
+  padding: 0% 10%;
+
+  .icon_doodle_left_arrow {
+    height: 80px;
+    width: auto;
+    transform: rotate(26.327deg);
+
+    @media screen and (max-width: 1900px) {
+      height: 80px;
+    }
+
+    @media screen and (max-width: 1450px) {
+      height: 60px;
+    }
+
+    @media screen and (max-width: 580px) {
+      height: 30px;
+      transform: rotate(30deg);
+    }
+  }
+
+  section {
+    padding: 0% 11% 5.5% 11%;
+    margin-top: -40px;
+
+    h2 {
+      font-family: "Epilogue";
+      font-size: 30px;
+      font-weight: 500;
+
+      @media screen and (max-width: 1900px) {
+        font-size: 25px;
+      }
+
+      @media screen and (max-width: 1450px) {
+        font-size: 22px;
+      }
+
+      @media screen and (max-width: 580px) {
+        font-size: 12.5px;
+        text-align: start;
+        margin-left: 30px;
+      }
+    }
+
+    p {
+      font-family: "Inter";
+      font-size: 19px;
+      font-style: italic;
+      font-weight: 500;
+      line-height: 40px;
+      margin-top: 90px;
+      padding-right: 10%;
+      text-align: center;
+
+      #indentation {
+        margin-left: 50px;
+      }
+
+      @include media-query(1900px) {
+        font-size: 17px;
+        padding-left: 3%;
+      }
+
+      @include media-query(1450px) {
+        font-size: 15px;
+        padding-left: 0%;
+      }
+
+      @include media-query(580px) {
+        font-size: 14px;
+        margin-top: 50px;
+        padding: 0%;
+        text-align: start;
+      }
+    }
+  }
+
+  @include media-query(580px) {
+    margin: 0;
+    padding: 50px 10px 150px 10px;
+    section {
+      padding: 0% 2% 5% 2%;
+      margin-top: -30px;
+    }
+  }
+}

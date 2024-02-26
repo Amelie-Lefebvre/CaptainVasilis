@@ -1,0 +1,100 @@
+{
+  "Reviewers": {
+    "Reviewer_1": {
+      "firstName": "Raha",
+      "lastName": "Suhailah Hakimi",
+      "picture": "/src/assets/images/images_temporary/reviewer_11.jpg",
+      "review": "Exploring Rhodes with my two kids on a small boat tour was a highlight of our family vacation. From snorkeling in secluded coves to spotting ancient ruins along the coastline, every moment was filled with excitement and wonder. It was a bonding experience we'll cherish for years to come.",
+      "rating": 5,
+      "time": "2023-9-30"
+    },
+    "Reviewer_2": {
+      "firstName": "Victoire",
+      "lastName": "Pariseau",
+      "picture": "/src/assets/images/images_temporary/reviewer_2.jpg",
+      "review": "Having the entire boat to ourselves allowed us to tailor the experience to our preferences.",
+      "rating": 5,
+      "time": "2023-9-28"
+    },
+    "Reviewer_3": {
+      "firstName": "Shaun",
+      "lastName": "Verhoeven",
+      "picture": "/src/assets/images/images_temporary/reviewer_4.jpg",
+      "review": "I highly recommend Captain Vasilis boat trip, we messaged through Facebook messenger to book. We were picked up straight from the beach next to our hotel and dropped back there after. The sights were so beautiful and Captain Vasilis was so kind and helpful. He pointed out and explained different landmarks, making sure everyone on board heard and understood what we were looking at. Nothing was too much trouble for him and he made us all feel so welcome and at ease. Stunning swimming spots and a lovely little boat. It was honestly a wonderful experience and I could not thank Captain Vasilis enough. Well worth it!",
+      "rating": 5,
+      "time": "2023-06-08"
+    },
+    "Reviewer_4": {
+      "firstName": "Tain",
+      "lastName": "Ch'ang",
+      "picture": "/src/assets/images/images_temporary/reviewer_5.jpg",
+      "review": "An amazing experience! With a lovely captain! We couldn’t be happier with Captain Vasilis! Friendly, kind and knowledgeable! A must do in Rhodes ❤️",
+      "rating": 5,
+      "time": "2023-06-28"
+    },
+    "Reviewer_5": {
+      "firstName": "Klaudia",
+      "lastName": "Pfeffer",
+      "picture": "/src/assets/images/images_temporary/reviewer_12.jpg",
+      "review": "What a fantastic boat trip! Captain Vasilis was warm & friendly throughout & very knowledgeable of the local area. Plus the taverna he recommended for lunch was first class! Thank you to Lucas at Atrium Palace Hotel for suggesting we book onto this trip. It really was one of the best days of the holiday!",
+      "rating": 4,
+      "time": "2023-08-20"
+    },
+    "Reviewer_6": {
+      "firstName": "Michael",
+      "lastName": "Jacobsen Andreasen",
+      "picture": "/src/assets/images/images_temporary/reviewer_3.png",
+      "review": "A lovely day out with the very kind and knowledgeable Captain Vasilis. I would 100% recommend this trip, beautiful views and the most beautiful ocean to swim in.",
+      "rating": 5,
+      "time": "2023-07-22"
+    },
+    "Reviewer_7": {
+      "firstName": "Michael",
+      "lastName": "Frey",
+      "picture": "/src/assets/images/images_temporary/reviewer_6.jpg",
+      "review": "Enjoyable outing, friendly crew, nice mix of interesting locations, variety of swimming and the hiatus in Heraki for lunch at a taverna was well timed. we were lucky that there were only 8 passengers so plenty of room. Good value for money, highly recommended.",
+      "rating": 5,
+      "time": "2023-08-10"
+    },
+    "Reviewer_8": {
+      "firstName": "Forbes",
+      "lastName": "Brown",
+      "picture": "/src/assets/images/images_temporary/reviewer_7.jpg",
+      "review": "Amazing views and swim stops. Thanks to Lucas at the hotel for recommending. Can't think of a better way to spend our last day in Kalathos",
+      "rating": 5,
+      "time": "2023-06-02"
+    },
+    "Reviewer_9": {
+      "firstName": "Clara",
+      "lastName": "Artyomova",
+      "picture": "/src/assets/images/images_temporary/reviewer_1.jpg",
+      "review": "I spoke to Vasilis the day before our trip to see if he could take my husband and I the next day. He was very friendly and said there was space. We had a brilliant day on the boat. There was plenty of fun and being able to swim in the amazing clear turquoise waters of Rhodes was an unforgettable experience. It has always been my dream to do that. I can so recommend these boat tours. Very well priced and a great way to see Rhodes from the sea. Will I be back to Rhodes? Absolutely and I will do this trip again. Thank you for a great day out.",
+      "rating": 5,
+      "time": "2023-06-16"
+    },
+    "Reviewer_10": {
+      "firstName": "Kunegunda",
+      "lastName": "Kwiatkowska",
+      "picture": "/src/assets/images/images_temporary/reviewer_9.jpg",
+      "review": "Renting the boat with friends was a blast. Exploring Rhodes together was unforgettable. We loved checking out spots like Navarone Bay, where the scenery was stunning. It was a day of adventure and relaxation, just what we needed.",
+      "rating": 5,
+      "time": "2023-08-11"
+    },
+    "Reviewer_11": {
+      "firstName": "Selene",
+      "lastName": "Greco",
+      "picture": "/src/assets/images/images_temporary/reviewer_10.jpg",
+      "review": "We had the best day on the Captain Vasilis Boat Tour. We took the tour on Tuesday, 17th of October, 2023. The crew were excellent. The tour amazing with superb stops and stunning sights and views. Great value for money. I would highly recommend this boat tour.",
+      "rating": 5,
+      "time": "2023-06-01"
+    },
+    "Reviewer_12": {
+      "firstName": "Benedetto",
+      "lastName": "Trevisano",
+      "picture": "/src/assets/images/images_temporary/reviewer_8.jpg",
+      "review": "Fantastic day out with Captain Vasilis and his crew mate Dave. Great beaches, great snorkelling, great swimming and great views ! There's a stop over for lunch at the restaurant of your choosing. All very relaxing, One of the best days of our holiday.",
+      "rating": 4,
+      "time": "2023-05-19"
+    }
+  }
+}

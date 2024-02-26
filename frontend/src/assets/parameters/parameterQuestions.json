@@ -1,0 +1,24 @@
+{
+  "Questions": {
+    "question_1": {
+      "question": "Are meals included in the tour?",
+      "answer": "Meals are not included in the tour price. However, there will be opportunities to purchase food and beverages at select stops along the way."
+    },
+    "question_2": {
+      "question": "Is there a minimum age requirement for participants?",
+      "answer": "Our tours are suitable for all ages. Children are welcome to join the tour, but please note that infants and toddlers must be accompanied by an adult."
+    },
+    "question_3": {
+      "question": "What languages are the tours conducted in?",
+      "answer": "Our tours are primarily conducted in English."
+    },
+    "question_4": {
+      "question": "What happens if the weather is bad on the day of my tour?",
+      "answer": "Your safety is our top priority. In the event of inclement weather, we will assess the situation and notify you of any changes to the tour itinerary. We may reschedule the tour or provide a refund, depending on the circumstances."
+    },
+    "question_5": {
+      "question": "Can I cancel or modify my tour reservation?",
+      "answer": "Yes, you can cancel or modify your tour reservation, but please note that cancellation policies may apply. Contact us as soon as possible to make any changes to your booking."
+    }
+  }
+}

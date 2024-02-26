@@ -1,0 +1,232 @@
+// imports
+@import "../styles/mixin";
+
+#main_container {
+  #main_container_presentation {
+    padding: 60px;
+    margin-block: 5vh 2vh;
+    img {
+      transform: rotate(180deg) scaleX(-1);
+    }
+    h3,
+    p {
+      height: auto;
+      padding: 0;
+      font-family: Epilogue;
+      font-size: 30px;
+      font-weight: 400;
+      color: $txt;
+    }
+
+    h3 {
+      margin-left: 8%;
+    }
+    p {
+      margin-left: 23%;
+    }
+
+    #signature {
+      transform: rotate(-5deg);
+      text-align: right;
+      font-size: 50px;
+      margin: 7% 12% 0% 0%;
+      font-family: The_Suavity;
+    }
+  }
+  #index_intro {
+    #index_img {
+      position: absolute;
+      height: 85%;
+      width: auto;
+      top: 1100px;
+      left: 55%;
+      z-index: -1;
+      transform: rotate(0deg);
+    }
+    blockquote {
+      z-index: 1;
+      font-family: Inter;
+      font-size: 16px;
+      font-style: italic;
+      font-weight: 400;
+      line-height: 40px;
+
+      &:nth-child(2) {
+        margin: 5% 55% 2% 9%;
+      }
+      &:nth-child(3) {
+        margin: 5% 15% 0% 45%;
+      }
+    }
+  }
+  @media screen and (max-width: 1500px) {
+    #main_container_presentation {
+      img {
+        width: 60px;
+        height: 60px;
+      }
+      h3,
+      p {
+        font-size: 27px;
+        line-height: 35px;
+      }
+      p {
+        margin-left: 35%;
+      }
+    }
+    #index_intro {
+      #index_img {
+        height: 85%;
+        top: 1000px;
+      }
+      blockquote {
+        font-size: 15px;
+        line-height: 35px;
+      }
+      #signature {
+        font-size: 40px;
+        margin: 10% 12% 0% 0%;
+      }
+    }
+  }
+  @media screen and (max-width: 1100px) {
+    #main_container_presentation {
+      padding: 60px 50px 60px 60px;
+      h3,
+      p {
+        font-weight: 500;
+      }
+    }
+    #index_intro {
+      #index_img {
+        height: 90%;
+        top: 1050px;
+        left: 45%;
+      }
+      blockquote {
+        font-size: 16px;
+        line-height: 40px;
+
+        &:nth-child(2) {
+          margin: 10% 8% 2% 9%;
+        }
+        &:nth-child(3) {
+          margin: 5% 8% 15% 9%;
+        }
+      }
+      #signature {
+        font-size: 50px;
+        margin: 7% 15% 0% 0%;
+      }
+    }
+  }
+  @media screen and (max-width: 950px) {
+    #main_container_presentation {
+      padding: 0;
+      margin: 60px 15px;
+      h3,
+      p {
+        font-size: 24px;
+        line-height: 35px;
+      }
+    }
+    #index_intro {
+      #index_img {
+        height: 85%;
+        top: 850px;
+        left: 22%;
+      }
+      blockquote {
+        text-align: center;
+        font-size: 14px;
+        line-height: 35px;
+
+        &:nth-child(2) {
+          margin: 20% 8% 2% 8%;
+        }
+        &:nth-child(3) {
+          margin: 5% 8% 18% 8%;
+        }
+      }
+      #signature {
+        font-size: 40px;
+        margin: 0% 10% 10% 0%;
+      }
+    }
+  }
+
+  @media screen and (max-width: 800px) {
+    #main_container_presentation {
+      padding: 0;
+      margin: 60px 15px;
+      img {
+        width: 50px;
+        height: 50px;
+      }
+      h3,
+      p {
+        font-size: 19px;
+        font-weight: 600;
+        line-height: 35px;
+      }
+      h3 {
+        margin: -20px 0 0 80px;
+      }
+      p {
+        margin-left: 35%;
+      }
+    }
+    #index_intro {
+      #index_img {
+        height: 85%;
+        top: 850px;
+        left: 22%;
+      }
+      #signature {
+        font-weight: 400;
+      }
+    }
+  }
+  @media screen and (max-width: 580px) {
+    #main_container_presentation {
+      margin: 60px 0px;
+      img {
+        width: 40px;
+        height: 40px;
+      }
+      h3,
+      p {
+        font-size: 18px;
+        line-height: 30px;
+      }
+      h3 {
+        margin: -20px 0 0 60px;
+      }
+      p {
+        margin-left: 25%;
+      }
+    }
+    #index_intro {
+      #index_img {
+        height: 75%;
+        top: 390px;
+        left: 12%;
+      }
+      blockquote {
+        text-align: left;
+        font-size: 12px;
+        line-height: 30px;
+
+        &:nth-child(2) {
+          margin: 20% 6% 2% 6%;
+        }
+        &:nth-child(3) {
+          margin: 5% 6% 18% 6%;
+        }
+      }
+      #signature {
+        font-size: 30px;
+      }
+    }
+  }
+}

@@ -1,0 +1,36 @@
+{
+  "cardIntro": {
+    "make_reservation": {
+      "title": "Join us on board.",
+      "txt": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Optio ipsam accusantium quas eos voluptatibus! Expedita inventore sint, officiis, vel voluptatibus adipisci facilis rerum eligendi esse magni quasi tempora. Sint, deserunt.Optio ipsam accusantium quas eos voluptatibus!"
+    },
+    "about_us": {
+      "title": "Meet the \"Captain Vasilis\" team.",
+      "txt": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Optio ipsam accusantium quas eos voluptatibus! Expedita inventore sint, officiis, vel voluptatibus adipisci facilis rerum eligendi esse magni quasi tempora. Sint, deserunt.Optio ipsam accusantium quas eos voluptatibus!"
+    },
+    "gallery": {
+      "title": "Enjoy our diaporama filled with our guests and where we would like to take you.",
+      "txt": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Optio ipsam accusantium quas eos voluptatibus! Expedita inventore sint, officiis, vel voluptatibus adipisci facilis rerum eligendi esse magni quasi tempora. Sint, deserunt.Optio ipsam accusantium quas eos voluptatibus!"
+    },
+    "destinations": {
+      "title": "Discover Rhodes' Island sceneries.",
+      "txt": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Optio ipsam accusantium quas eos voluptatibus! Expedita inventore sint, officiis, vel voluptatibus adipisci facilis rerum eligendi esse magni quasi tempora. Sint, deserunt.Optio ipsam accusantium quas eos voluptatibus!"
+    },
+    "contact_us": {
+      "title": "Feel free to use our form to get in touch with us.",
+      "txt": ""
+    },
+    "privacy_policy": {
+      "title": "Welcome to our privacy policy.",
+      "txt": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Optio ipsam accusantium quas eos voluptatibus! Expedita inventore sint, officiis, vel voluptatibus adipisci facilis rerum eligendi esse magni quasi tempora. Sint, deserunt."
+    },
+    "faq": {
+      "title": "Frequently Asked Questions (FAQ)",
+      "txt": ""
+    },
+    "attributions": {
+      "title": "Our corner to thanks those that contributed to the website.",
+      "txt": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Optio ipsam accusantium quas eos voluptatibus! Expedita inventore sint, officiis, vel voluptatibus adipisci facilis rerum eligendi esse magni quasi tempora. Sint, deserunt."
+    }
+  }
+}

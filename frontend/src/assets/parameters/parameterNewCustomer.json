@@ -1,0 +1,37 @@
+{
+  "New Customer": {
+    "Customer_1": {
+      "firstName": "Raha",
+      "lastName": "Suhailah Hakimi",
+      "email": "fromYoursTruly@yahoo.com",
+      "phone": "+4509131300",
+      "reservation_type": 1,
+      "tour_type": 0,
+      "time": "2024-05-30",
+      "adults": 2,
+      "children": 3
+    },
+    "Customer_2": {
+      "firstName": "John",
+      "lastName": "Doe",
+      "email": "john.doe@example.com",
+      "phone": "+1234567890",
+      "reservation_type": 0,
+      "tour_type": 0,
+      "time": "2024-06-15",
+      "adults": 1,
+      "children": 0
+    },
+    "Customer_3": {
+      "firstName": "Victoire",
+      "lastName": "Pariseau",
+      "email": "victoire.parisseau@example.com",
+      "phone": "",
+      "reservation_type": 1,
+      "tour_type": 0,
+      "time": "2024-07-01",
+      "adults": 2,
+      "children": 1
+    }
+  }
+}

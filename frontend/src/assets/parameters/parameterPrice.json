@@ -1,0 +1,30 @@
+{
+  "CardPrice": {
+    "price_morning": {
+      "title": "lazy day boat tour",
+      "start": "9:00",
+      "end": "15:30",
+      "duration": "6H30",
+      "childAgeStart": 3,
+      "childAgeEnd": 12,
+      "childPrice": 20.0,
+      "adultPrice": 35.0,
+      "fullBoat": 700.0,
+      "pickupPointA": "Vlicha",
+      "pickupPointATime": "9:15",
+      "pickupPointB": "Atrium Palace Beach",
+      "pickupPointBTime": "9:30"
+    },
+    "price_afternoon": {
+      "title": "afternoon tour",
+      "start": "16:00",
+      "end": "18:30",
+      "duration": "2H30",
+      "childAgeStart": 3,
+      "childAgeEnd": 12,
+      "childPrice": 15.0,
+      "adultPrice": 25.0,
+      "fullBoat": 450.0
+    }
+  }
+}

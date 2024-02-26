@@ -1,0 +1,13 @@
+@import "../../styles/mixin";
+
+#reservation_confirmation {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 8%;
+  width: 100%;
+
+  .btn_next_step {
+    margin-top: 63px;
+  }
+}

@@ -1,0 +1,141 @@
+// imports
+@import "./_variable.scss";
+@import "./_fonts.scss";
+
+// fonts
+@mixin beautyWind {
+  font-family: "Beauty_wind";
+  font-size: 42px;
+  font-weight: 400;
+  color: $white;
+}
+
+@mixin inter {
+  font-family: "Inter";
+  font-size: 12px;
+  font-weight: 700;
+  color: $txt;
+}
+
+@mixin inter_small_footer {
+  font-family: "Inter";
+  font-size: 12px;
+  font-weight: 500;
+  margin-bottom: 25px;
+  color: $white;
+}
+
+@mixin inter_basic {
+  font-family: "Inter";
+  color: $txt;
+  font-size: 12px;
+}
+
+@mixin epilogue_basic {
+  font-family: "Inter";
+  color: $txt;
+  font-size: 12px;
+}
+
+@mixin epilogue {
+  font-family: "Epilogue";
+  font-weight: 500;
+}
+
+@mixin epilogue_small_footer {
+  font-family: "Epilogue";
+  font-size: 9px;
+  font-weight: 400;
+  color: $white;
+}
+
+// big basics
+@mixin flex_rows {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+@mixin flex_basic {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+@mixin flex_row_center {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  align-self: center;
+}
+
+@mixin flex_centering_col {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin spans_nav_footer {
+  top: -16px;
+  height: 2px;
+  background: $txt;
+  position: relative;
+  display: block;
+}
+
+// animation rotation
+@mixin rotation_animation {
+  @keyframes bounceRotate {
+    0% {
+      transform: rotate(-25deg) scale(1);
+    }
+    50% {
+      transform: rotate(50deg) scale(1.1);
+    }
+    50.1% {
+      transform: rotate(50deg) scale(1.1);
+    }
+    100% {
+      transform: rotate(-25deg) scale(1);
+    }
+  }
+}
+
+// change background header
+
+@mixin dynamicBackgroundImage($path) {
+  background-image: map-get($backgroundImages, $path);
+}
+
+// breakpoints
+@mixin media-query($breakpoint) {
+  @media screen and (max-width: $breakpoint) {
+    @content;
+  }
+}
+
+// btn
+@mixin btn_step_reservation {
+  width: 150px;
+  height: 35px;
+  text-transform: uppercase;
+  font-size: 11px;
+  border-radius: 10px;
+  border: 0.5px solid $txt;
+  background-color: $darkBlue;
+  color: $white;
+  filter: drop-shadow(4px 4px 2px rgba(43, 43, 43, 0.392));
+  &:active {
+    box-shadow: inset 0px 0px 10px rgba(0, 0, 0, 0.684);
+    filter: drop-shadow(4px 4px 2px rgba(43, 43, 43, 0.503));
+  }
+  cursor: pointer;
+  &[disabled] {
+    filter: drop-shadow(4px 4px 2px rgba(43, 43, 43, 0.392));
+    cursor: not-allowed;
+    box-shadow: none;
+    background-color: $disabled;
+    color: $medumGrey;
+  }
+}
