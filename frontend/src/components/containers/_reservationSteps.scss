@@ -40,9 +40,14 @@
       grid-template-columns: 1.15fr 2fr;
 
       .reservation_img {
-        background-image: url("src/assets/images/images_structure/grotto.avif");
-        background-size: cover;
-        background-position-x: 70%;
+        overflow: hidden;
+        img {
+          position: relative;
+          width: 1000px;
+          height: 100%;
+          left: -400px;
+          filter: grayscale(100%);
+        }
       }
 
       .reservation_infos {

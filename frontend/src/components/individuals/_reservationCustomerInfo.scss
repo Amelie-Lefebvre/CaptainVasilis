@@ -10,30 +10,81 @@
 
   #reservation_customer_form {
     width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    padding: 5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    #reservation_full_name,
+    #reservation_mail_phone {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      margin-bottom: 5%;
+
+      .form_contact_input_phone {
+        width: 40%;
+        .react-tel-input {
+          width: 100%;
+          margin: 0;
+          .form-control {
+            width: 100%;
+            height: none;
+            padding-left: 50px;
+            border-color: $txt;
+            border-radius: 0;
+
+            &:active,
+            &:focus {
+              width: 100%;
+              border: 1px solid $txt;
+            }
+          }
+          .flag-dropdown {
+            margin-right: 2px;
+            border-radius: 0;
+            border-color: $txt;
+            background-color: $white;
+          }
+        }
+      }
+
+      .form_contact_input {
+        display: flex;
+        flex-direction: column;
+        width: 40%;
+        textarea,
+        input {
+          background-color: rgba(255, 255, 255, 0.2);
+          margin-block: 10px;
+          border: none;
+          border-bottom: 1px solid #111010;
+          outline: none;
+          padding: 5px;
+          &:active,
+          &:focus {
+            border: 1px solid $txt;
+            border-bottom: 1px solid #111010;
+          }
+        }
+      }
+
+      .input-wrapper {
+        display: flex;
+        flex-direction: column;
+      }
+    }
+
     .formDatePicker_passengers_form {
       width: 100%;
       display: flex;
       flex-direction: row;
-      justify-content: space-around;
+      justify-content: space-between;
+      .formDatePicker_passenger_inputs {
+        width: 40%;
+      }
     }
   }
-}
-
-.intl-tel-input {
-  display: table-cell;
-}
-
-.intl-tel-input .selected-flag {
-  z-index: 4;
-}
-
-.intl-tel-input .country-list {
-  z-index: 5;
-}
-
-.input-group .intl-tel-input .form-control {
-  border-top-left-radius: 4px;
-  border-top-right-radius: 0;
-  border-bottom-left-radius: 4px;
-  border-bottom-right-radius: 0;
 }

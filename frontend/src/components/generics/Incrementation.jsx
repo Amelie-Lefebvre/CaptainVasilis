@@ -22,6 +22,7 @@ const Incrementation = ({ value, onChange }) => {
       </button>
       <input
         type="text"
+        name="passengerValue"
         value={value}
         onChange={() => {}}
         className="input-number"

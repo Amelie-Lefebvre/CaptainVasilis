@@ -49,6 +49,7 @@ const FormDatePicker = ({
             <input
               className="radio_input"
               type="radio"
+              name="time1"
               value="option1"
               checked={selectedOption === "option1"}
               onChange={handleOptionChange}
@@ -67,6 +68,7 @@ const FormDatePicker = ({
                   <input
                     className="radio_btn_points_input"
                     type="radio"
+                    name="pickUp1"
                     value="pickUp1"
                     checked={selectedPickUpOption === "pickUp1"}
                     onChange={handlePickUpOptionChange}
@@ -81,6 +83,7 @@ const FormDatePicker = ({
                 <label className="radio_btn_points_label">
                   <input
                     className="radio_btn_points_input"
+                    name="pickUp2"
                     type="radio"
                     value="pickUp2"
                     checked={selectedPickUpOption === "pickUp2"}
@@ -100,6 +103,7 @@ const FormDatePicker = ({
             <input
               className="radio_input"
               type="radio"
+              name="time2"
               value="option2"
               checked={selectedOption === "option2"}
               onChange={handleOptionChange}
@@ -133,7 +137,7 @@ FormDatePicker.propTypes = {
   destination2: PropTypes.string.isRequired,
   dest1End: PropTypes.string.isRequired,
   dest1Start: PropTypes.string.isRequired,
-  dest2End: PropTypes.number.isRequired,
+  dest2End: PropTypes.string.isRequired,
   dest2Start: PropTypes.string.isRequired,
   pickUp1: PropTypes.string.isRequired,
   pickUp1Time: PropTypes.string.isRequired,

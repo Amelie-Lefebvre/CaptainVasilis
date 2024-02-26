@@ -20,7 +20,6 @@ const ReservationSteps = () => {
   }
   return (
     <>
-      {" "}
       <ReservationNav />
       <main className="reservation_steps">
         <div className="reservation_name">
@@ -29,7 +28,12 @@ const ReservationSteps = () => {
         <section className="reservation_change_step">
           {/* IMPORTANT BITS: CONTAINS THE PROCEDURE FOR RESERVATION */}
           <article className="reservation_content">
-            <section className="reservation_img"></section>
+            <section className="reservation_img">
+              <img
+                src="/src/assets/images/images_structure/grotto.avif"
+                alt="grotto in Rhodes"
+              />
+            </section>
             <section className="reservation_infos">
               <Routes>
                 <Route path="" element={<ReservationDatePicker />} />

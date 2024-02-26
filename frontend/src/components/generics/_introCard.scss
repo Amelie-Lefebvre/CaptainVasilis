@@ -55,12 +55,8 @@
       font-weight: 500;
       line-height: 40px;
       margin-top: 90px;
-      padding-right: 10%;
+      padding-inline: 8%;
       text-align: center;
-
-      #indentation {
-        margin-left: 50px;
-      }
 
       @include media-query(1900px) {
         font-size: 17px;

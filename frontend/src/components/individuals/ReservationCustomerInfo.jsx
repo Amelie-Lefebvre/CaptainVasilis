@@ -1,10 +1,9 @@
 // imports
-// import IntlTelInput from "react-intl-tel-input";
 import { useState, useEffect } from "react";
 import { useLocation, useNavigate } from "react-router-dom";
 import FormPassengerSpots from "../forms/FormPassengerSpots";
+import PhoneNumber from "../individuals/PhoneNumber";
 import "./_reservationCustomerInfo.scss";
-// import "react-intl-tel-input/dist/main.css";
 
 const ReservationCustomerInfo = () => {
   const location = useLocation();
@@ -41,7 +40,7 @@ const ReservationCustomerInfo = () => {
     <div id="reservation_customer_info">
       <div id="reservation_customer_form">
         <div id="reservation_full_name">
-          <div className="input-wrapper">
+          <div className="form_contact_input">
             <label htmlFor="firstName">First Name</label>
             <input
               type="text"
@@ -51,7 +50,7 @@ const ReservationCustomerInfo = () => {
               onChange={(e) => setFirstName(e.target.value)}
             />
           </div>
-          <div className="input-wrapper">
+          <div className="form_contact_input">
             <label htmlFor="lastName">Last Name</label>
             <input
               type="text"
@@ -63,7 +62,7 @@ const ReservationCustomerInfo = () => {
           </div>
         </div>
         <div id="reservation_mail_phone">
-          <div className="input-wrapper">
+          <div className="form_contact_input">
             <label htmlFor="email">Email</label>
             <input
               type="email"
@@ -73,14 +72,7 @@ const ReservationCustomerInfo = () => {
               onChange={(e) => setEmail(e.target.value)}
             />
           </div>
-          <div className="input-wrapper">
-            <label htmlFor="phone">Phone</label>
-            <input
-              type="tel"
-              id="phone"
-              placeholder="Enter your phone number"
-            />
-          </div>
+          <PhoneNumber />
         </div>
         <FormPassengerSpots />
       </div>
