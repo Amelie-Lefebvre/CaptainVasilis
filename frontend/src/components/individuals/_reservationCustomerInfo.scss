@@ -87,4 +87,16 @@
       }
     }
   }
+  .formDatePicker_passenger_inputs.choice {
+    width: 40%;
+    filter: grayscale(50%);
+    pointer-events: none;
+
+    .increment-decrement-input {
+      .decrement,
+      .increment {
+        background-color: $medumGrey;
+      }
+    }
+  }
 }

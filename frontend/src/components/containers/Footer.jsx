@@ -1,11 +1,19 @@
 //imports
+import { useLocation } from "react-router-dom";
 import { Link } from "react-router-dom";
 import FooterNav from "../navs/FooterNav";
 import { useMediaQuery } from "react-responsive";
 import "./_footer.scss";
 
 const Footer = () => {
+  // Retrieve the current location
+  const location = useLocation().pathname;
+
   const isMobile = useMediaQuery({ minWidth: 580 });
+
+  // Check if the current path starts with "/backoffice"
+  const isAdminPath = location.startsWith("/backoffice");
+  if (isAdminPath) return null;
 
   return (
     <footer>

@@ -14,6 +14,9 @@ const Header = () => {
   // Retrieve the current location
   const location = useLocation().pathname;
 
+  // Check if the current path starts with "/backoffice"
+  const isAdminPath = location.startsWith("/backoffice");
+
   // Define paths for which to display the home button
   const homePath = [
     "/",
@@ -94,6 +97,8 @@ const Header = () => {
 
   // for media queries
   const isMobile = useMediaQuery({ minWidth: 580 });
+
+  if (isAdminPath) return null;
 
   return (
     <>

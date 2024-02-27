@@ -1,5 +1,4 @@
 // imports
-import { Link } from "react-router-dom";
 
 const HeaderNav = () => {
   return (
@@ -7,13 +6,13 @@ const HeaderNav = () => {
       <nav id="headerNav">
         <ul>
           <li>
-            <Link to="/to_reservation">make a reservation</Link>
+            <a href="/to_reservation">make a reservation</a>
           </li>
           <li>
-            <Link to="/about_us">about us</Link>
+            <a href="/about_us">about us</a>
           </li>
           <li>
-            <Link className="headerNav_link" to="/">
+            <a className="headerNav_link" href="/">
               <h1>
                 Captain <span>V</span>asilis
               </h1>
@@ -22,15 +21,27 @@ const HeaderNav = () => {
                 <p>Boat tour</p>
                 <span></span>
               </div>
-            </Link>
+            </a>
           </li>
           <li>
-            <Link to="/gallery">gallery</Link>
+            <a href="/gallery">gallery</a>
           </li>
           <li>
-            <Link to="/contact_us">contact us</Link>
+            <a href="/contact_us">contact us</a>
           </li>
         </ul>
+        <img
+          id="towards_backoffice"
+          src="/src/assets/images/images_structure/user.svg"
+          alt="back office icon"
+        />
+        <a href="/backoffice/login">
+          <img
+            id="towards_backoffice_gif"
+            src="/src/assets/animations/user.gif"
+            alt="back office icon animated"
+          />
+        </a>
       </nav>
     </>
   );

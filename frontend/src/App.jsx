@@ -23,17 +23,21 @@ import Dest_RedSandBeach from "./pages/Dest_RedSandBeach";
 import Dest_AgathiGoldenSandBeach from "./pages/Dest_AgathiGoldenSandBeach";
 import Dest_Haraki from "./pages/Dest_Haraki";
 
-// footer pages
+// FOOTER
 
-// import Attributions from "./pages/Attributions";
-// import Faq from "./pages/FAQ";
-// import Privacy_policy from "./pages/Privacy_policy";
+import Attributions from "./pages/Attributions";
+import Faq from "./pages/Faq";
+import Privacy_policy from "./pages/Privacy_policy";
+
+// BACKOFFICE PAGES
+import Login from "./pages/Login";
 
 function App() {
   return (
     <BrowserRouter>
       <Header />
       <Routes>
+        {/* CLIENT */}
         <Route path="/" element={<Index />} />
         <Route path="/to_reservation/*" element={<Reservation />} />
         <Route path="/about_us" element={<AboutUs />} />
@@ -61,9 +65,13 @@ function App() {
         />
         <Route path="/destinations/haraki" element={<Dest_Haraki />} />
         <Route path="/contact_us" element={<Contact_us />} />
-        {/* <Route path="/privacy_policy" element={<Privacy_policy />} />
+        <Route path="/privacy_policy" element={<Privacy_policy />} />
         <Route path="/faq" element={<Faq />} />
-        <Route path="/attributions" element={<Attributions />} /> */}
+        <Route path="/attributions" element={<Attributions />} />
+
+        {/* BACKOFFICE */}
+        <Route path="/backoffice/login" element={<Login />} />
+        <Route />
       </Routes>
       <Footer />
     </BrowserRouter>

@@ -1,0 +1,56 @@
+// imports
+@import "../styles/mixin";
+
+#login_page {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  font-family: Inter;
+  #image_login_form {
+    width: 25%;
+    height: 100%;
+    background-color: blueviolet;
+    flex-direction: column;
+  }
+  #login_form_container {
+    width: 75%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    #form_login {
+      margin-top: 1.5%;
+      width: 25%;
+      padding: 5% 8%;
+      border: 1px $medumGrey solid;
+      border-radius: 5px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      .form_contact_input {
+        #userName,
+        #current-password {
+          display: flex;
+          flex-direction: column;
+          width: 35vh;
+          margin-block: 15px 30px;
+          height: 40px;
+          padding-left: 10px;
+        }
+        label {
+          font-size: 12px;
+          font-weight: 600;
+        }
+      }
+      .btn_next_step.login {
+        margin-left: 0;
+      }
+    }
+    .error-message {
+      color: red;
+      position: absolute;
+      top: 25%;
+    }
+  }
+}

@@ -53,6 +53,37 @@
       }
     }
   }
+
+  #towards_backoffice {
+    position: absolute;
+    right: 1.3%;
+    top: 8.9%;
+    height: 65px;
+    width: 65px;
+    display: block;
+    cursor: pointer;
+  }
+
+  #towards_backoffice_gif {
+    position: absolute;
+    right: 0.8%;
+    top: 1.6%;
+    height: 86px;
+    width: 86px;
+    display: none;
+    cursor: pointer;
+  }
+
+  &:hover {
+    #towards_backoffice {
+      display: none; // Hide the SVG image on hover
+    }
+
+    #towards_backoffice_gif {
+      display: block; // Show the GIF image on hover
+    }
+  }
+
   // MEDIUM SCREEN
   @media screen and (max-width: 1150px) {
     height: 110px;
@@ -111,7 +142,6 @@
     }
   }
 }
-
 // BURGER MENU ON SMALL DISPLAYS
 #burger_menu_container {
   height: 195px;
