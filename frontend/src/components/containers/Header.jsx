@@ -4,6 +4,7 @@ import { useLocation } from "react-router-dom";
 
 // from within
 import HeaderCard from "../generics/HeaderCard";
+import HeaderOffice from "../navs/HeaderOffice";
 import HeaderNav from "../navs/HeaderNav";
 import BurgerMenu from "../navs/BurgerMenu";
 import HomeNav from "../navs/HomeNav";
@@ -16,6 +17,7 @@ const Header = () => {
 
   // Check if the current path starts with "/backoffice"
   const isAdminPath = location.startsWith("/backoffice");
+  const isLoginPage = location === "/backoffice/login";
 
   // Define paths for which to display the home button
   const homePath = [
@@ -87,8 +89,6 @@ const Header = () => {
       txt2: "",
       extraClass: "haraki-page",
     },
-
-    // Add more path-specific content as needed
   };
 
   // Determine the appropriate HeaderCard content based on the current path
@@ -98,7 +98,13 @@ const Header = () => {
   // for media queries
   const isMobile = useMediaQuery({ minWidth: 580 });
 
-  if (isAdminPath) return null;
+  if (isAdminPath) {
+    if (isLoginPage) {
+      return null;
+    } else {
+      return <HeaderOffice />;
+    }
+  }
 
   return (
     <>
