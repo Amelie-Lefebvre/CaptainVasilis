@@ -33,6 +33,8 @@ import Privacy_policy from "./pages/Privacy_policy";
 import Login from "./pages/Login";
 import Index_backend from "./pages/Index_backend";
 import Booking from "./pages/Booking";
+import Partners from "./pages/Partners";
+import Accounting from "./pages/Accounting";
 
 function App() {
   return (
@@ -76,6 +78,8 @@ function App() {
         <Route />
         <Route path="/backoffice/index" element={<Index_backend />}></Route>
         <Route path="/backoffice/booking" element={<Booking />}></Route>
+        <Route path="/backoffice/accounting" element={<Accounting />}></Route>
+        <Route path="/backoffice/partners" element={<Partners />}></Route>
       </Routes>
       <Footer />
     </BrowserRouter>
