@@ -325,3 +325,29 @@
     }
   }
 }
+
+// BACKOFFICE HEADER
+#headerOffice {
+  height: 130px;
+  width: 100%;
+  border-bottom: 2px solid $lightGrey;
+  font-family: Inter;
+
+  #headerOffice_title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 20%;
+    height: 100%;
+    border-right: 2px solid $lightGrey;
+
+    h1 {
+      font-size: 30px;
+      font-weight: 400;
+      color: $GreekBlue;
+      span {
+        font-size: 50px;
+      }
+    }
+  }
+}

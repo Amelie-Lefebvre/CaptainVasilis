@@ -1,0 +1,45 @@
+@import "../../styles/mixin";
+
+#backOffice_menu {
+  width: 20.1%;
+  min-height: 49em;
+  background-color: $GreekBlue;
+  box-shadow: 4px 2px 8px 2px rgba(0, 0, 0, 0.5);
+  font-family: Inter;
+  padding-block: 4%;
+
+  .backOffice_menu_a {
+    width: 80%;
+    padding-inline: 10%;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    text-decoration: none;
+    margin-bottom: 10%;
+    cursor: default;
+
+    button {
+      color: $white;
+      font-weight: 600;
+      font-size: 15px;
+      width: 70%;
+      height: 100%;
+      border: none;
+      background-color: $GreekBlue;
+      display: flex;
+      align-items: center;
+      margin-right: 18%;
+      cursor: pointer;
+      .backOffice_menu_a_icon {
+        width: 50px;
+        height: 50px;
+        margin-right: 40px;
+      }
+    }
+    .arrow_right {
+      height: 30px;
+      width: auto;
+    }
+  }
+}

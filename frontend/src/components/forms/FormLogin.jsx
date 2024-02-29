@@ -36,7 +36,7 @@ const FormLogin = () => {
       console.log("Authentication successful");
       setError("");
       // Redirect the user to /backoffice/menu
-      navigate("/backoffice/menu");
+      navigate("/backoffice/index");
     } else if (userName === passwordParameter.user.username) {
       // Username exists but password is incorrect
       setError("Password is not valid");
