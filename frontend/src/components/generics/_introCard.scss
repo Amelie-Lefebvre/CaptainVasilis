@@ -3,25 +3,12 @@
 .introduction_article {
   color: $txt;
   margin: 0;
-  padding: 0% 10%;
+  padding: 3% 10%;
 
   .icon_doodle_left_arrow {
-    height: 80px;
+    height: 60px;
     width: auto;
     transform: rotate(26.327deg);
-
-    @media screen and (max-width: 1900px) {
-      height: 80px;
-    }
-
-    @media screen and (max-width: 1450px) {
-      height: 60px;
-    }
-
-    @media screen and (max-width: 580px) {
-      height: 30px;
-      transform: rotate(30deg);
-    }
   }
 
   section {
@@ -40,12 +27,6 @@
       @media screen and (max-width: 1450px) {
         font-size: 22px;
       }
-
-      @media screen and (max-width: 580px) {
-        font-size: 12.5px;
-        text-align: start;
-        margin-left: 30px;
-      }
     }
 
     p {
@@ -57,32 +38,48 @@
       margin-top: 90px;
       padding-inline: 8%;
       text-align: center;
+    }
+  }
 
-      @include media-query(1900px) {
-        font-size: 17px;
-        padding-left: 3%;
-      }
-
-      @include media-query(1450px) {
+  @include media-query(1450px) {
+    .icon_doodle_left_arrow {
+      height: 45px;
+    }
+    section {
+      p {
         font-size: 15px;
         padding-left: 0%;
-      }
-
-      @include media-query(580px) {
-        font-size: 14px;
-        margin-top: 50px;
-        padding: 0%;
-        text-align: start;
       }
     }
   }
 
   @include media-query(580px) {
-    margin: 0;
-    padding: 50px 10px 150px 10px;
+    padding: 10% 3%;
+    .icon_doodle_left_arrow {
+      transform: rotate(20deg);
+      height: 35px;
+    }
     section {
-      padding: 0% 2% 5% 2%;
-      margin-top: -30px;
+      padding: 3% 2% 5% 2%;
+      margin-inline: 1%;
+      line-height: 25px;
+
+      h2 {
+        font-size: 14px;
+        font-weight: 700;
+        margin-left: 12%;
+      }
+      p {
+        #indentation {
+          margin-left: 15%;
+        }
+        font-style: normal;
+        font-size: 13px;
+        margin-top: 50px;
+        padding: 0;
+        line-height: 28px;
+        text-align: start;
+      }
     }
   }
 }
