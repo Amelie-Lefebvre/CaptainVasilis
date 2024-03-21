@@ -1,0 +1,11 @@
+@import "../styles/mixin";
+
+#scanning {
+  display: flex;
+  width: 100%;
+
+  #scanning_article {
+    padding: 8%;
+    width: 64%;
+  }
+}

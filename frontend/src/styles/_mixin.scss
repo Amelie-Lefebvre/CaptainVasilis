@@ -138,3 +138,12 @@
     color: $medumGrey;
   }
 }
+
+// navigation buttons for gallery
+@mixin btnNavGallery {
+  background: none;
+  background-color: $GreekBlue;
+  filter: none;
+  border: $GreekBlue 1px solid;
+  text-shadow: none;
+}

@@ -64,3 +64,23 @@
     }
   }
 }
+
+@include media-query(580px) {
+  .gallery_container_mini {
+    margin-bottom: 10em;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 15px; /* Adjust the gap between images as needed */
+    padding: 2%;
+    img {
+      height: 11em;
+      width: 11.3em;
+      cursor: pointer;
+      transition: transform 0.3s ease;
+      &:hover {
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        transform: scale(1.05);
+      }
+    }
+  }
+}

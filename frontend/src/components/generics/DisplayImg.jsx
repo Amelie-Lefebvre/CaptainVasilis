@@ -1,5 +1,6 @@
 // imports
 import PropTypes from "prop-types";
+import { useMediaQuery } from "react-responsive";
 import { useState, useEffect } from "react";
 import "./_displayImg.scss";
 
@@ -63,23 +64,35 @@ const DisplayImg = ({ library }) => {
     ));
   };
 
+  const isMobile = useMediaQuery({ minWidth: 580 });
+
   return (
     <>
-      {images.length > 0 && (
-        <article className="gallery_container">
-          <div className="image-row">{splitImagesIntoRows(0, 3)}</div>
-
-          <div className="image-row">{splitImagesIntoRows(3, 4)}</div>
-
-          <div className="image-row">
-            {splitImagesIntoRows(7, images.length - 7)}
-          </div>
-
-          {selectedImage && (
-            <div className="overlay" onClick={handleCloseOverlay}>
-              <img src={selectedImage} alt="Full-size Image" />
+      {isMobile ? (
+        images.length > 0 && (
+          <article className="gallery_container">
+            <div className="image-row">{splitImagesIntoRows(0, 3)}</div>
+            <div className="image-row">{splitImagesIntoRows(3, 4)}</div>
+            <div className="image-row">
+              {splitImagesIntoRows(7, images.length - 7)}
             </div>
-          )}
+            {selectedImage && (
+              <div className="overlay" onClick={handleCloseOverlay}>
+                <img src={selectedImage} alt="Full-size Image" />
+              </div>
+            )}
+          </article>
+        )
+      ) : (
+        <article className="gallery_container_mini">
+          {images.map((image, index) => (
+            <img
+              key={index}
+              src={image}
+              alt={`Image ${index + 1}`}
+              onClick={() => handleImageClick(index)}
+            />
+          ))}
         </article>
       )}
     </>

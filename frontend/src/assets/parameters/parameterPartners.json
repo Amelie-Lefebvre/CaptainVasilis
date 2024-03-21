@@ -1,0 +1,82 @@
+{
+  "partners": {
+    "1": {
+      "partners_type": "home",
+      "partners_name": "website",
+      "partners_phone": "",
+      "partners_email": "",
+      "partners_logo": "/src/assets/images/images_structure/fish.svg",
+      "partners_rate_morning_child": 0,
+      "partners_rate_morning_adult": 0,
+      "partners_rate_morning_full": 0,
+      "partners_rate_afternoon_child": 0,
+      "partners_rate_afternoon_adult": 0,
+      "partners_rate_afternoon_full": 0
+    },
+    "2": {
+      "partners_type": "home",
+      "partners_name": "direct reservation",
+      "partners_phone": "",
+      "partners_email": "",
+      "partners_logo": "/src/assets/images/images_structure/fish.svg",
+      "partners_rate_morning_child": 0,
+      "partners_rate_morning_adult": 0,
+      "partners_rate_morning_full": 0,
+      "partners_rate_afternoon_child": 0,
+      "partners_rate_afternoon_adult": 0,
+      "partners_rate_afternoon_full": 0
+    },
+    "3": {
+      "partners_type": "organisation",
+      "partners_name": "Atrium Palace",
+      "partners_phone": "02244031601",
+      "partners_email": "info.palace@atriumhotels.gr",
+      "partners_logo": "/src/assets/images/images_structure/fish.svg",
+      "partners_rate_morning_child": 2.5,
+      "partners_rate_morning_adult": 5,
+      "partners_rate_morning_full": 10,
+      "partners_rate_afternoon_child": 1.25,
+      "partners_rate_afternoon_adult": 1,
+      "partners_rate_afternoon_full": 5
+    },
+    "4": {
+      "partners_type": "organisation",
+      "partners_name": "Lindos Aqua Terra",
+      "partners_phone": "02244031601",
+      "partners_email": "info@lindosaquaterra.gr",
+      "partners_logo": "/src/assets/images/images_structure/fish.svg",
+      "partners_rate_morning_child": 2.5,
+      "partners_rate_morning_adult": 5,
+      "partners_rate_morning_full": 10,
+      "partners_rate_afternoon_child": 1.25,
+      "partners_rate_afternoon_adult": 1,
+      "partners_rate_afternoon_full": 5
+    },
+    "5": {
+      "partners_type": "private",
+      "partners_name": "Κωνσταντίνα Λειβαδά",
+      "partners_phone": "06988745245",
+      "partners_email": "triantaphyllos.papakonstantinou@yahoo.com",
+      "partners_logo": "/src/assets/images/images_structure/fish.svg",
+      "partners_rate_morning_child": 2.5,
+      "partners_rate_morning_adult": 5,
+      "partners_rate_morning_full": 10,
+      "partners_rate_afternoon_child": 1.25,
+      "partners_rate_afternoon_adult": 1,
+      "partners_rate_afternoon_full": 5
+    },
+    "6": {
+      "partners_type": "private",
+      "partners_name": "Λάμπρος Μανιάκης",
+      "partners_phone": "06916092914",
+      "partners_email": "eleutheropoulos.meletios@nikolopoulou.net",
+      "partners_logo": "/src/assets/images/images_structure/fish.svg",
+      "partners_rate_morning_child": 2.5,
+      "partners_rate_morning_adult": 5,
+      "partners_rate_morning_full": 10,
+      "partners_rate_afternoon_child": 1.25,
+      "partners_rate_afternoon_adult": 1,
+      "partners_rate_afternoon_full": 5
+    }
+  }
+}

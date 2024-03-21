@@ -1,0 +1,53 @@
+@import "../styles/mixin";
+
+#partners {
+  display: flex;
+  width: 100%;
+
+  #partners_article {
+    padding: 8%;
+    width: 64%;
+
+    .partners_article_selection {
+      display: flex;
+      justify-content: space-between;
+      padding: 5%;
+      border-radius: 15px;
+      box-shadow: 4px 4px 6px 0px rgba(0, 0, 0, 0.25);
+      border: 1.2px solid $lightGrey;
+
+      Table {
+        font-family: Inter;
+
+        thead {
+          font-size: 0.8em;
+          color: white;
+          // sub menu
+          #tr_time {
+            th:last-child,
+            :nth-child(2) {
+              background-color: $lighertBlue;
+            }
+          }
+          //   real menu
+          #tr_header {
+            width: 100%;
+            th {
+              text-align: center;
+              width: 10em;
+              background-color: $GreekBlue;
+            }
+          }
+        }
+        tbody {
+          font-size: 0.75em;
+          tr {
+            .rating {
+              text-align: center;
+            }
+          }
+        }
+      }
+    }
+  }
+}

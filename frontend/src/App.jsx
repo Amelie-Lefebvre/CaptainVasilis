@@ -35,6 +35,7 @@ import Index_backend from "./pages/Index_backend";
 import Booking from "./pages/Booking";
 import Partners from "./pages/Partners";
 import Accounting from "./pages/Accounting";
+import Scanning from "./pages/Scanning";
 
 function App() {
   return (
@@ -79,7 +80,14 @@ function App() {
         <Route path="/backoffice/index" element={<Index_backend />}></Route>
         <Route path="/backoffice/booking" element={<Booking />}></Route>
         <Route path="/backoffice/accounting" element={<Accounting />}></Route>
-        <Route path="/backoffice/partners" element={<Partners />}></Route>
+        <Route
+          path="/backoffice/scanning_qr_code"
+          element={<Scanning />}
+        ></Route>
+        <Route
+          path="/backoffice/editing/partners"
+          element={<Partners />}
+        ></Route>
       </Routes>
       <Footer />
     </BrowserRouter>
